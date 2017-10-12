@@ -89,3 +89,5 @@ mod 'tse_facts',
   :git => 'https://github.com/gregloughmiller2/tse_facts.git',
   :ref => 'master'
 
+# text tagmail module
+mod 'puppetlabs-tagmail', '2.3.0'
