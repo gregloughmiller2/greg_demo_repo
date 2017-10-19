@@ -5,6 +5,7 @@ class profile::platform::baseline::westrock {
     '2012 R2': {
       include ::profile::platform::baseline::windows
       include ::profile::platform::baseline::winmbs
+      include ::profile::platform::baseline::execstuff
     }
     '2016': {
       include ::profile::platform::baseline::windows
