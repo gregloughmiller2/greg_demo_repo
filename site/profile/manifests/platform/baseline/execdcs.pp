@@ -1,10 +1,8 @@
 class profile::platform::baseline::execdcs {
 #
 
-dsc_registry {'registry_test':
-  dsc_ensure    => 'Present'
-  dsc_key       => 'HKEY_LOCAL_MACHINE\SOFTWARE\ExampleKey'
-  dsc_valuename => 'TestValue'
-  dsc_valuedata => 'TestData'
+dsc_windowsfeature {'featureexample':
+  dsc_ensure    = 'absent'
+  dsc_name      = 'Web-Server'
   }
 }
