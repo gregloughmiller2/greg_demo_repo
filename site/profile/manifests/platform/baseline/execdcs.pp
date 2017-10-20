@@ -10,7 +10,7 @@ dsc_file{ 'ExampleFile':
   dsc_ensure          => 'Present',
   dsc_type            => 'File',
   dsc_destinationpath => 'C:/westrock.txt',
-  dsc_contents        => 'Custom text file created with puppet dcs module',
+  dsc_contents        => 'Custom text file created with puppet dcs module, 2nd try',
 }
 
 }
