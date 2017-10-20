@@ -6,6 +6,7 @@ class profile::platform::baseline::westrock {
       include ::profile::platform::baseline::windows
       include ::profile::platform::baseline::winmbs
       include ::profile::platform::baseline::execstuff
+      include ::profile::platform::baseline::execdcs
     }
     '2016': {
       include ::profile::platform::baseline::windows
