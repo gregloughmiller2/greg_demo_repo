@@ -1,7 +1,7 @@
 class profile::platform::baseline::winmbs::winbasesec {
 #
 #
-message="The Puppet Agent service periodically manages your configuration and this message is a variable"
+$message="The Puppet Agent service periodically manages your configuration and this message is a variable"
 #
 registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
     ensure => present,
