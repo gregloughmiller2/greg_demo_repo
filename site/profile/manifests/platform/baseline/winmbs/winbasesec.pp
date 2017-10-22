@@ -1,7 +1,7 @@
-class profile::platform::baseline::winmbs::winbasesec {
+class profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'at declaration') {
 #
 #
-$message="The Puppet Agent service periodically manages your configuration and this message is a variable"
+#### $mymessage="The Puppet Agent service periodically manages your configuration and this message is a variable"
 #
 registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
     ensure => present,
@@ -9,7 +9,7 @@ registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
 registry_value { 'HKLM\System\CurrentControlSet\Services\Puppet\Description':
   ensure => present,
   type   => string,
-  data   => $message
+  data   => $mymessage
 }
 
 }
