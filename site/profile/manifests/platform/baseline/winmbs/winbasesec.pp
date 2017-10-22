@@ -1,4 +1,4 @@
-class profile::platform::baseline::winmbs::winbasesec(String $mymessage = '') {
+class profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'testestestest') {
 #
 #
 #### $mymessage="The Puppet Agent service periodically manages your configuration and this message is a variable"
