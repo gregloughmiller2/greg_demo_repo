@@ -1,4 +1,4 @@
-olass profile::platform::baseline::winmbs::winbasesec(String $mymessage='default') {
+olass profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'testestest') {
 
   registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
       ensure => present,
