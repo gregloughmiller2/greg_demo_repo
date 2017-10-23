@@ -1,12 +1,15 @@
-olass profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'testestest') {
-
-  registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
-      ensure => present,
-  }
-  registry_value { 'HKLM\System\CurrentControlSet\Services\Puppet\Description':
+class profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'testestestest') {
+#
+#
+#### $mymessage="The Puppet Agent service periodically manages your configuration and this message is a variable"
+#
+registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
     ensure => present,
-    type   => string,
-    data   => $mymessage,
-  }
+}
+registry_value { 'HKLM\System\CurrentControlSet\Services\Puppet\Description':
+  ensure => present,
+  type   => string,
+  data   => $mymessage
+}
 
 }
