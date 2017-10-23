@@ -9,7 +9,7 @@ registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
 registry_value { 'HKLM\System\CurrentControlSet\Services\Puppet\Description':
   ensure => present,
   type   => string,
-  data   => $mymessage
+  data   => $mymessage,
 }
 
 }
