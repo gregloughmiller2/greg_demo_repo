@@ -12,7 +12,7 @@ class profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'teste
     message  =>  $mymessage,
   }
   echo {'certname':
-    message  =>  $trusted.$certname,
+    message  =>  $trusted['certname'],
   }
   echo {'memory':
     message  =>  $memory,
