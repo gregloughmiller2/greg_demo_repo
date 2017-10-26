@@ -8,5 +8,13 @@ class profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'teste
     type   => string,
     data   => $mymessage,
   }
-
+  echo {'TEST':
+    message  =>  'This is a test'
+  }
+  echo {'fact':
+    message  =>  '$osfamily'
+  }
+  echo {'fact':
+    message  =>  $osfamily
+  }
 }
