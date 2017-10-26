@@ -9,12 +9,15 @@ class profile::platform::baseline::winmbs::winbasesec(String $mymessage = 'teste
     data   => $mymessage,
   }
   echo {'TEST':
-    message  =>  'This is a test',
+    message  =>  $mymessage,
   }
-  echo {'fact':
-    message  =>  '$osfamily',
+  echo {'certname':
+    message  =>  $trusted.certname,
   }
-  echo {'different_fact':
+  echo {'memory':
+    message  =>  $memory,
+  }
+  echo {'osfamily':
     message  =>  $osfamily,
   }
 }
